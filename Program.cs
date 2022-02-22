@@ -23,7 +23,7 @@ foreach (string s in files)
     FileInfo file = new FileInfo(s);
     DateTime earliestDateTime = file.CreationTime;
     if (file.LastWriteTime < earliestDateTime) { earliestDateTime = file.LastWriteTime; };
-    // file.LastWriteTime = file.CreationTime = earliestDateTime;
+    file.LastWriteTime = file.CreationTime = earliestDateTime;
     Console.WriteLine($"Updated file {s} to {earliestDateTime.ToString()}");
 }
 
