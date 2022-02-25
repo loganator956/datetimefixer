@@ -1,4 +1,5 @@
-﻿// check for any major problems that will prevent the operation and exit if find any
+﻿const string VersionTag = "v1.1_dev";
+// check for any major problems that will prevent the operation and exit if find any
 if (args.Length != 1)
 {
     Console.WriteLine($"Unexpected number of arguments specified. Expected 1, received {args.Length}");
